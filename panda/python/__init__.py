@@ -191,7 +191,7 @@ class Panda(object):
   def __init__(self, serial=None, claim=True):
     self._serial = serial
     self._handle = None
-    #self.connect(claim)
+    self.connect(claim)
     self._mcu_type = self.get_mcu_type()
 
   def close(self):
